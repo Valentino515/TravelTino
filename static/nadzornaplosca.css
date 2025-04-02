@@ -1,0 +1,35 @@
+.ozadje {
+    position: fixed; /* Da slika ostane na mestu, ko se pomika po strani */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Poskrbi, da slika zapolni celoten zaslon brez popačenja */
+    background-position: center; /* Centriraj sliko */
+    background-repeat: no-repeat; /* Ne ponavljaj slike */
+    z-index: -1; /* Poskrbi, da bo slika vedno pod vsebino */
+    background-image: url('baskavoda.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+        }
+
+        .okvir {
+            display: flex;
+            flex-direction: column;  /* Postavi elemente v stolpec */
+            justify-content: center; /* Centriranje vodoravno */
+            align-items: center;     /* Centriranje navpično */
+            width: 350px;            /* Širina okvirja */
+            padding: 20px;           /* Notranji rob za prostor okoli besedila */
+            margin: 50px auto;       /* Povečaj prostor okoli zunanji okvir */
+            border: 2px solid black; /* Okvir okoli vsega */
+            border-radius: 20px;     /* Okrogle robove */
+            background-color: #c70404;  /* Svetla barva ozadja */
+        }
+        
+        h1, h2, h3 {
+            margin: 10px 0;          /* Doda prostor med naslovi */
+            color: azure;            /* Barva besedila */
+            text-align: center;      /* Poravnava besedila v vrstici */
+        }

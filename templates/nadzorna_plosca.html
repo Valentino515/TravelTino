@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadzorna plosca</title>
+    <link rel="stylesheet" href="static/nadzornaplosca.css">
+    <link rel="stylesheet" href="static/odjava_gumb.css">
+
+
+</head>
+<body>
+
+
+    <div class="okvir">
+
+        <h1 class="centered-box">Pozdravljen/a, {{ uporabnik }}!</h1>
+        <h2 class="centered-box">Uspešno ste se prijavili kot uporabnik naše agencije TravelTino,zdaj lahko naredite vašo rezervacijo za vaše potovanje</h2>
+        <h3 class="centered-box">Vse kar potrebujete je da pritisnite gumb Rezervacija</h3>
+
+    </div>
+
+        <div class="ozadje"></div>
+
+        <form action="{{ url_for('odjava') }}" method="post">
+            <button type="submit" class="odjava_gumb">Odjava</button>
+        </form>
+
+
+        <form action="{{ url_for('destinacije') }}" method="post">
+            <button type="submit" class="rezervacija_gumb">Rezervacija</button>
+        </form>
+
+         
+</body>
+</html>
