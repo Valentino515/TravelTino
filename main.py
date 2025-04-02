@@ -84,7 +84,7 @@ def registracija():
 
     return render_template("registracija.html")
 
-#komentar
+#pošiljanje emaila
 def poslji_email(eposta):
     poslalec_emaila = 'traveltino515@gmail.com'
     geslo_emaila = 'cvfs hwxh nvxw sjgo'
