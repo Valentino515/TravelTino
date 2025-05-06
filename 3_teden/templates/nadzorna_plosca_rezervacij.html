@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacij</title>
+    <link rel="stylesheet" href="static/nadzorna_plosca_rezervacij.css">
+</head>
+<body>
+
+    <div class="ozadje"></div>
+
+
+    <div class="okvir">
+
+        <h1 class="centered-box">Pozdravljen/a, {{ session['ime'] }}!</h1>
+        <h2 class="centered-box">Uspešno ste naredili rezervacijo za vaše potovanje.</h2>
+    </div>
+
+    <a href="{{ url_for('destinacije') }}" class="gumbdrugedestinacije">Druge destinacije</a>
+
+    <form action="{{ url_for('destinacije') }}" method="post">
+        <button type="submit" class="odjava_gumb">Odjava</button>
+    </form>
+    
+</body>
+</html>
