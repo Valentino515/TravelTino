@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posodobitev gesla</title>
+    <link rel="stylesheet" href="static/prijava.css">
+    <link rel="stylesheet" href="static/posodobigeslo.css">
+</head>
+<body>
+
+    <div class="ozadje"></div>
+
+    <div class="container">
+        <h2>Posodobi tvoje geslo</h2>
+        <form action="{{ url_for('posodobigeslo') }}" method="POST">
+
+            <label for="username">Uporabniško ime</label>
+            <input type="text" id="username" name="username" required
+                   {% if napaka %} class="error-input" {% endif %}>
+
+            <label for="email">E-pošta</label>
+            <input type="email" id="email" name="email" required
+                    {% if napaka %} class="error-input" {% endif %}>
+            
+            <label for="new_password">Novo geslo</label>
+            <input type="password" id="new_password" name="new_password" required
+                   {% if napaka %} class="error-input" {% endif %}>
+
+            <div class="gumbposodobitvojegeslo">
+                <input type="submit" value="Posodobi geslo">
+            </div>
+
+            {% if napaka %}
+            <div class="error">{{ napaka }}</div>
+            {% endif %}
+        </form>
+    </div>
+
+</body>
+</html>

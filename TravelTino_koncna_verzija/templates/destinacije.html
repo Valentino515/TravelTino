@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinacije</title>
+    <link rel="stylesheet" href="static/destinacije.css">
+    <link rel="stylesheet" href="static/destinacije_gumbe.css">
+    
+</head>
+<body>
+
+    <div class="ozadje"></div>
+
+    <a href="{{ url_for('domov') }}" class="gumb3">Domov</a>
+    <a href="{{ url_for('kontakt') }}" class="gumb1">Kontakt</a>
+    <a href="{{ url_for('prijava') }}" class="gumbprijava">Prijava</a>
+    <a href="{{ url_for('registracija') }}" class="gumbregistracija">Registracija</a>
+
+
+
+    <form method="POST">
+        <label for="destinacija">Destinacija:</label>
+        <select id="destinacija" name="q" required>
+            <option value="">-- Izberi destinacijo --</option>
+            <option value="/pariz">Pariz</option>
+            <option value="/barcelona">Barcelona</option>
+            <option value="/rim">Rim</option>
+            <option value="/london">London</option>
+            <option value="/amsterdam">Amsterdam</option>
+            <option value="/praga">Praga</option>
+        </select>
+
+        <label for="datum_od">Datum od:</label>
+        <input type="date" id="datum_od" name="datum_od" required>
+
+        <label for="datum_do">Datum do:</label>
+        <input type="date" id="datum_do" name="datum_do" required>
+
+        <label for="prevoz">Prevoz:</label>
+        <select id="prevoz" name="prevoz" >
+            <option value="">-- Izberi način prevoza --</option>
+            <option value="Letalo">Letalo</option>
+            <option value="Avtobus">Avtobus</option>
+        </select>
+
+        <label for="hotel">Hotel:</label>
+        <input type="text" id="hotel" name="hotel" placeholder="Ime hotela">
+
+        <button type="submit">Poišči</button>
+    </form>
+
+
+    <div id="galerija">
+        <ul class="destinacije">
+            <li>
+                <a href="{{ url_for('pariz') }}"</a>
+                    <img src="static/pariz.jpg" alt="Pariz" title="Pariz">
+                    <span>Pariz</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('barcelona') }}"</a>
+                    <img src="static/barcelona.jpg" alt="Barcelona" title="Barcelona">
+                    <span>Barcelona</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('rim') }}"</a>
+                    <img src="static/rim.jpg" alt="Rim" title="Rim">
+                    <span>Rim</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('london') }}"</a>
+                    <img src="static/london.jpg" alt="London" title="London">
+                    <span>London</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('amsterdam') }}"</a>
+                    <img src="static/amsterdam.jpg" alt="Amsterdam" title="Amsterdam">
+                    <span>Amsterdam</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('praga') }}"</a>
+                    <img src="static/praga.jpg" alt="Praga" title="Praga">
+                    <span>Praga</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+ 
+</body>
+</html>
