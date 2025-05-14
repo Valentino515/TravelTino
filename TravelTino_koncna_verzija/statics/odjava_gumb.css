@@ -1,0 +1,64 @@
+.ozadje {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -1; 
+    background-image: url('baskavoda.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+        }
+
+
+.odjava_gumb {
+    background-color: #FF6347; 
+    color: white;
+    padding: 12px 30px;         
+    border: none;
+    border-radius: 25px;      
+    font-size: 18px;           
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    margin: 10px;              
+    text-align: center;        
+    position: relative;
+    width: 170px;           
+    height: 60px;         
+    left: 40%;      
+    }
+
+.odjava_gumb:hover {
+    background-color: #f36b3a;  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
+}
+
+.rezervacija_gumb {
+    background-color: #32CD32; 
+    color: white;
+    padding: 14px 35px;        
+    border: none;
+    border-radius: 30px;        
+    font-size: 18px;         
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    margin: 10px;               
+    text-align: center;         
+    position: relative;
+    width: 200px;               
+    height: 60px;               
+    left: 50%;                 
+    top: -80px;                  
+}
+
+.rezervacija_gumb:hover {
+    background-color: #228B22;  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
+}

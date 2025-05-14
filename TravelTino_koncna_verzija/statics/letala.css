@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f0f4f8; 
+    margin: 0;
+    padding: 30px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem; 
+    margin-bottom: 50px;
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+
+.airlines-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 40px;
+}
+
+
+.airline {
+    background: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e0e0; 
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.airline:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.airline img {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.airline:hover img {
+    transform: scale(1.1); 
+}
+
+
+.airline h2 {
+    color: #34495e;
+    font-size: 1.7rem;
+    margin: 20px 0;
+    font-weight: 600;
+    text-transform: capitalize; 
+}
+
+
+.airline p {
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.airline a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.airline a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 768px) {
+    .airlines-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .airline {
+        padding: 20px;
+    }
+}

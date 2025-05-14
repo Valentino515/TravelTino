@@ -1,0 +1,32 @@
+.gumbvreme {
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-text-stroke: 0px transparent; 
+    text-shadow: none;
+}
+
+
+
+.gumbvreme {
+    background-color: #087441; 
+    color: rgb(248, 246, 246);
+    left: 10px;
+    top: 20px;
+    position: fixed;
+}
+
+.gumbvreme:hover {
+    background-color: #FF4500;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
