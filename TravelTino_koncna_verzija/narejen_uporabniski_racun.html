@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregled uporabnikov</title>
+    <link rel="stylesheet" href="static/narejen_uporabniski_racun.css">
+</head>
+<body>
+
+    <h1 style="color: rgb(32, 2, 104);">Seznam uporabnikov v glavni bazi</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ime</th>
+                <th>Email</th>
+                <th>Geslo</th>
+                <th>Čas Registracije</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for uporabnik in uporabniki %}
+            <tr>
+                <td>{{ uporabnik['id'] }}</td>
+                <td>{{ uporabnik['ime'] }}</td>
+                <td>{{ uporabnik['email'] }}</td>
+                <td>{{ uporabnik['geslo'] }}</td>
+                <td>{{ uporabnik['cas_registracije'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <h1 style="color: rgb(32, 2, 104);">Seznam prijavljenih uporabnikov</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ime</th>
+                <th>Email</th>
+                <th>Geslo</th>
+                <th>Čas Prijave</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for uporabnik in prijave_uporabnikov %}
+            <tr>
+                <td>{{ uporabnik['id'] }}</td>
+                <td>{{ uporabnik['ime'] }}</td>
+                <td>{{ uporabnik['email'] }}</td>
+                <td>{{ uporabnik['geslo'] }}</td>
+                <td>{{ uporabnik['cas_prijave'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    <h1 style="color: rgb(32, 2, 104);">Seznam posodobljenih gesel</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ime</th>
+                <th>Email</th>
+                <th>Staro geslo</th> 
+                <th>Novo geslo</th>
+                <th>Čas posodobitve</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for uporabnik in posodobljeni_uporabniki %}
+            <tr>
+                <td>{{ uporabnik['id'] }}</td>
+                <td>{{ uporabnik['ime'] }}</td>
+                <td>{{ uporabnik['email'] }}</td>
+                <td>{{ uporabnik['staro_geslo'] }}</td> 
+                <td>{{ uporabnik['novo_geslo'] }}</td>
+                <td>{{ uporabnik['cas_posodobitve'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <h1 style="color: rgb(32, 2, 104);">Seznam rezervacij</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ime</th>
+                <th>Priimek</th>
+                <th>Email</th>
+                <th>Destinacija</th>
+                <th>Telefon</th>
+                <th>Čas rezervacije</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rezervacija in rezervacije_uporabnikov %}
+            <tr>
+                <td>{{ rezervacija['id'] }}</td>
+                <td>{{ rezervacija['ime'] }}</td>
+                <td>{{ rezervacija['priimek'] }}</td>
+                <td>{{ rezervacija['email'] }}</td>
+                <td>{{ rezervacija['destinacija'] }}</td>
+                <td>{{ rezervacija['telefon'] }}</td>
+                <td>{{ rezervacija['cas_rezervacije'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    <h1 style="color: rgb(32, 2, 104);">Seznam vseh odgovorov na anketo</h1>
+<table border="1" class="data-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Izkušnja potovanja</th>
+            <th>Prevoz</th>
+            <th>Nastanitev</th>
+            <th>Destinacija</th>
+            <th>Aktivnosti</th>
+            <th>Kakovost storitev</th>
+            <th>Komunikacija</th>
+            <th>Varnost</th>
+            <th>Priporočilo</th>
+            <th>Predlogi</th>
+            <th>Splošno zadovoljstvo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for odgovor in oddane_ankete %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ odgovor['izkusnja_potovanja'] }}</td>
+            <td>{{ odgovor['prevoz'] }}</td>
+            <td>{{ odgovor['nastanitev'] }}</td>
+            <td>{{ odgovor['destinacija'] }}</td>
+            <td>{{ odgovor['aktivnosti'] }}</td>
+            <td>{{ odgovor['kakovost_storitev'] }}</td>
+            <td>{{ odgovor['komunikacija'] }}</td>
+            <td>{{ odgovor['varnost'] }}</td>
+            <td>{{ odgovor['priporocilo'] }}</td>
+            <td>{{ odgovor['predlogi'] }}</td>
+            <td>{{ odgovor['splosno_zadovoljstvo'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+    <div class="ozadje"></div>
+
+</body>
+</html>

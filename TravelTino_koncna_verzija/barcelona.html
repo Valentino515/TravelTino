@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/gumbvreme.css">
+    <link rel="stylesheet" href="static/gumbletala.css">
+    <link rel="stylesheet" href="static/gumbavtobusi.css">
+    <title>Barcelona</title>
+    <style>
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f7faff, #e2ecf9);
+      padding: 2rem 1rem;
+    }
+
+    .ponudba {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 30px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 2rem;
+    }
+
+    .ponudba:hover {
+      transform: scale(1.01);
+    }
+
+    .naslov h1 {
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .uvod {
+      font-size: 1.1rem;
+      color: #444;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .dnevi h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #3498db;
+    }
+
+    .dan {
+      margin-bottom: 1.2rem;
+      background-color: #f9fafe;
+      border-left: 4px solid #3498db;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .dan h3 {
+      color: #2c3e50;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .dan p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .info {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .info p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cena {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      background-color: #3498db;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    @media (max-width: 768px) {
+      .ponudba {
+        padding: 1.5rem;
+      }
+
+      .naslov h1 {
+        font-size: 1.7rem;
+      }
+
+      .uvod {
+        font-size: 1rem;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="ozadje"></div>
+    <div class="container">
+        <div class="ponudba">
+        <div class="naslov">
+            <h1>Barcelona – 7 dni (letalo)</h1>
+            <p class="uvod">
+            Doživi čarobno Barcelono – mesto Gaudija, sončnih plaž in izvrstne katalonske kulinarike! Vključen letalski prevoz in hotel z zajtrkom.
+            </p>
+        </div>
+
+        <div class="dnevi">
+            <h2>🗓️ Načrt potovanja:</h2>
+
+            <div class="dan">
+            <h3>1. dan – Prihod v Barcelono & večerni utrip Ramble</h3>
+            <p>
+            Po pristanku na letališču El Prat vas bo pričakal naš predstavnik, ki vas bo pospremil do hotela v osrčju mesta. Po krajšem počitku sledi orientacijski večerni sprehod po znameniti <strong>La Rambli</strong> – ulici umetnikov, uličnih nastopov in barvitih stojnic. Obiskali bomo <strong>tržnico La Boqueria</strong>, polno svežega sadja, lokalnih salam in morskih sadežev. Dan zaključimo z večerjo v tapas restavraciji, kjer poskusimo <em>patatas bravas</em>, <em>pan con tomate</em> in sangrijo. Nočitev v hotelu.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>2. dan – Gaudijeve mojstrovine: Sagrada Família, Park Güell & večerni Eixample</h3>
+            <p>
+            Po zajtrku se bomo odpravili do <strong>Sagrade Famílie</strong>, nedokončane bazilike, ki jo je zasnoval Antoni Gaudí. Spoznali bomo njegovo vizijo skozi vitraže, stolpe in simboliko. Nato nas bo pot vodila v <strong>Park Güell</strong>, pisan park z mozaiki, kjer nas bo razveselil razgled nad mestom. Popoldne obisk <strong>Casa Batlló</strong> in <strong>La Pedrera</strong> – čudovitih modernističnih zgradb na aveniji Passeig de Gràcia. Zvečer prosto za sprehod po četrti Eixample, znani po elegantnih kavarnah in trgovinah.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>3. dan – Gotska četrt & Picasso muzej</h3>
+            <p>
+            Dan začnemo z raziskovanjem <strong>Barri Gòtic</strong> – stare gotske četrti, kjer si bomo ogledali <strong>Katedralo svetega Krištofa</strong>, rimskimi ostanki in mestno hišo. Sprehodimo se po skrivnostnih ozkih uličicah vse do <strong>muzeja Pabla Picassa</strong>, kjer bomo videli umetnikov razvoj skozi mladostna dela in kubistične stvaritve. Kosilo v avtentični katalonski taverni, z jedmi kot so <em>butifarra</em> (domača klobasa) in <em>pa amb oli</em>. Zvečer priporočamo obisk flamenco predstave z večerjo.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>4. dan – Montjuïc, Olimpijski stadion & večerna čarobna fontana</h3>
+            <p>
+            Zjutraj se z gondolo povzpnemo na hrib <strong>Montjuïc</strong>, kjer nas čaka obisk <strong>Fundacije Miró</strong> z edinstveno zbirko umetnin. Sprehodimo se mimo <strong>Olimpijskega stadiona</strong>, botaničnih vrtov in si ogledamo <strong>trdnjavo Montjuïc</strong>, ki ponuja čudovit razgled na pristanišče. Kosilo na vrhu z razgledom. Zvečer spektakel pred <strong>Nacionalnim muzejem umetnosti Katalonije</strong> – <em>Font Màgica</em>, vodna predstava s svetlobo in glasbo.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>5. dan – Plaža Barceloneta & morska kulinarika</h3>
+            <p>
+            Po zajtrku se bomo podali na <strong>plažo Barceloneta</strong>, eno izmed najbolj znanih mestnih plaž v Evropi. Možnost sprostitve ob morju, kopanja ali izposoje koles za obalno pot. Kosilo v restavraciji ob obali – priporočamo <em>paello s školjkami</em> ali sveže pečeno hobotnico. Popoldne prosto – možnost obiska <strong>Akvarija Barcelona</strong> ali raziskovanja parka <strong>Ciutadella</strong>. Zvečer lahkotna večerja in sprehod ob pristanišču Port Vell.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>6. dan – Celodnevni izlet v Figueres & Salvador Dalí</h3>
+            <p>
+            Zgodaj zjutraj se odpravimo na sever Katalonije, v mestece <strong>Figueres</strong>, kjer je rojen Salvador Dalí. Obiskali bomo njegov ekscentrični <strong>Dalí Theater-Museum</strong>, poln nenavadnih skulptur, optičnih iluzij in ikoničnih umetnin. Po kosilu se vrnemo v Barcelono. Popoldne prosto za zadnje nakupe, obisk lokalnih tržnic ali uživanje v restavraciji z razgledom. Zvečer zaključna večerja s pogledom na osvetljeno Sagrado Famílio.
+            </p>
+        </div>
+
+        <div class="dan">
+            <h3>7. dan – Zadnje ure v Barceloni & odhod</h3>
+            <p>
+            Zadnji zajtrk v hotelu. Po njem boste imeli čas za zadnje oglede ali sprehod do <strong>Plaça de Catalunya</strong>, kjer se združita staro in moderno mesto. Možnost nakupa spominkov, katalonskih vin ali obisk bližnjega <strong>Parc de la Ciutadella</strong> za sprostitev. Organiziran prevoz na letališče. Barcelona nas bo zapustila s toplino, umetnostjo in vonjem Mediterana. ¡Hasta pronto!
+            </p>
+        </div>
+        </div>
+
+        <div class="info">
+            <p><strong>✅ Vključeno:</strong> Letalski prevoz, hotel z zajtrkom, voden ogled po mestu.</p>
+            <p class="cena">💶 Cena: <strong>649 € / osebo</strong></p>
+            <a href="{{ url_for('rezervacija') }}">
+            <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+                Rezerviraj zdaj
+            </button>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div id="galerija" class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/sagrada_familia.jpg" class="card-img-top img-fluid" alt="Sagrada Familia" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Sagrada Família</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/ramblas.jpg" class="card-img-top img-fluid" alt="Ramblas" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Ramblas</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/park_guell.jpg" class="card-img-top img-fluid" alt="Park Guell" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Park Güell</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/montjuic.jpg" class="card-img-top img-fluid" alt="Montjuic" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Montjuïc</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/barceloneta.jpg" class="card-img-top img-fluid" alt="Barceloneta" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Plaža Barceloneta</p> 
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="card h-100 shadow">
+            <img src="static/ponudba_barcelona/dali_muzej.jpg" class="card-img-top img-fluid" alt="Dalijev muzej" style="height: 250px; object-fit: cover;">
+            <div class="card-body text-center">
+                <p class="card-text mb-0">Dalíjev muzej</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+      <form action="/vreme" method="GET">
+        <input type="hidden" name="location" value="{{ destinacija }}">
+        <button type="submit" class="gumbvreme">Vreme</button>
+    </form>
+    
+    
+    <a href="{{ url_for('letala') }}" class="gumbletala">Letala</a>
+    
+    <a href="{{ url_for('avtobusi') }}" class="gumbavtobusi">Avtobusi</a>
+
+  </body>
+  </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremenska napoved</title>
+    <link rel="stylesheet" href="static/vreme.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Preveri vreme</h1>
+    
+    <form method="POST" action="/vreme">
+        <input type="text" name="location" placeholder="Vnesi mesto..." required>
+        <button type="submit">Prikaži vreme</button>
+    </form>
+
+    {% if napaka %}
+        <div class="napaka">{{ napaka }}</div>
+    {% endif %}
+
+
+    {% if current_temperature %}
+        <h2>Trenutna temperatura v {{ location }}: {{ current_temperature }}°C</h2>
+    {% endif %}
+
+
+    {% if weather %}
+        <h2>Napoved za 7 dni za {{location}}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Min Temp (°C)</th>
+                    <th>Maks Temp (°C)</th>
+                    <th>Padavine (mm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(weather['time']|length) %}
+                    <tr>
+                        <td>{{ weather['time'][i] }}</td>
+                        <td>{{ weather['temperature_2m_min'][i] }}°C</td>
+                        <td>{{ weather['temperature_2m_max'][i] }}°C</td>
+                        <td>{{ weather['precipitation_sum'][i] }} mm</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+</div>
+
+</body>
+</html>
